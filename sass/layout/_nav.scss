@@ -1,0 +1,56 @@
+.nav{
+    width: $full-width;
+    height: 63.6%;
+    margin-bottom: 7rem;
+    & ol{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8rem;
+    }
+    &__link{
+        background-color: rgb(219, 219, 219);
+        height: 7.5rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 1.5rem;
+        & a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            column-gap: 2rem;
+        }
+        &--transparent{
+            background-color: $color-primary;
+            opacity: 0.33;
+        }
+    }
+}
+
+
+
+
+// .nav {
+//     padding-right: $layout-margin;
+//     flex: 2 1 auto;
+//     text-align: right;
+//     &__link {
+//         display: inline;
+//         font-size: 3rem;
+//         padding-left: 1.5rem;
+//         & a{
+//         text-decoration: none;
+//         color: $colour-accent;
+//         }
+//         &--active {
+//             color: $colour-secondary;
+//             &:hover{
+//                 cursor:default;
+//                 color: $colour-secondary;
+//             }
+//         }
+//         & a:hover{
+//             color: $colour-white;
+//         }
+//     }
+// }

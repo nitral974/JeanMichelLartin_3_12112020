@@ -6,6 +6,12 @@
 @mixin border-shadow {
     box-shadow: 0rem 0rem 0.1rem black;
 }
+@mixin padding-general {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+
+
 @mixin btn {
     padding: 1.5rem 2rem;
     border: none;
