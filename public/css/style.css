@@ -64,6 +64,10 @@ button {
   background-color: #b0b0b0;
 }
 
+.fa-map-marker-alt {
+  padding: 1rem;
+}
+
 .container {
   width: 100vw;
   height: 100%;
