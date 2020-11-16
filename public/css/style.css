@@ -81,6 +81,7 @@ button {
   height: 7.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 1.5rem;
 }
 .nav__link a {
@@ -92,6 +93,18 @@ button {
 .nav__link--transparent {
   background-color: #9356DC;
   opacity: 0.33;
+}
+.nav__circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  position: absolute;
+  left: 1.5rem;
+  margin-left: 2rem;
 }
 
 .footer {
