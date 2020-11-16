@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitral974/JeanMichelLartin_3_12112020.git"
+  },
+  "author": "Lartin Jean-Michel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitral974/JeanMichelLartin_3_12112020/issues"
+  },
+  "homepage": "https://github.com/nitral974/JeanMichelLartin_3_12112020#readme"
+}
