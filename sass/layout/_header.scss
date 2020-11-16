@@ -1,5 +1,5 @@
 .header {
-    &_logo{
-        font-family: 'Shrikhand', cursive;
-    }
+    width: $full-width;
+    height: 6.4rem;
+    @include display-module;
 }
