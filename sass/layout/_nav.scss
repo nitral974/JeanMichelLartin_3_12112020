@@ -2,6 +2,7 @@
     width: $full-width;
     height: 63.6%;
     margin-bottom: 7rem;
+    padding-left: 1.4rem;
     
     & ol{
         width: 100%;
@@ -12,12 +13,13 @@
    
 
     &__link{
-        background-color: rgb(219, 219, 219);
+        background-color: $color-firstbackground;
         height: 7.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 1.5rem;
+        position: relative;
         
         & a{
             display: flex;
@@ -26,8 +28,8 @@
             column-gap: 2rem;
         }
         &--transparent{
-            background-color: $color-primary;
-            opacity: 0.33;
+            background-color:#deccf4;
+            
         }
     }
     &__circle{
@@ -39,8 +41,8 @@
         justify-content: center;
         background-color: $color-primary;
         position: absolute;
-        left: 1.5rem;
-        margin-left: 2rem;
+        left: -1.5rem;
+        color: $color-fonts-white;
         
     }
 }
