@@ -29,6 +29,7 @@
       align-items: center;
       border-radius: 1.5rem;
       position: relative;
+      @include border-shadow;
 
       &--transparent {
         background-color: #f5edff;
