@@ -1,25 +1,23 @@
-.footer{
-    background-color: black;
+.footer {
+  background-color: black;
+  color: white;
+  width: $full-width;
+  height: 19.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  &__heading {
+    font-family: "Shrikhand", cursive;
+    font-size: 2rem;
+  }
+  &__link {
     color: white;
-    width: $full-width;
-    height: 19.7rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    &__heading {
-        font-family: 'Shrikhand', cursive;
-        font-size: 2rem;
+    align-items: center;
+
+    & p {
+      margin-left: 1rem;
     }
-    &__link{
-        color: white;
-        display: flex;
-        align-items: center;
-        & i {
-            width: 1rem;
-        }
-        & p{
-            margin-left: 2rem;
-        }
-    }
+  }
 }
