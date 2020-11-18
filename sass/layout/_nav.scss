@@ -29,7 +29,6 @@
         }
         &--transparent{
             background-color:#deccf4;
-            
         }
     }
     &__circle{
@@ -43,34 +42,9 @@
         position: absolute;
         left: -1.5rem;
         color: $color-fonts-white;
-        
     }
 }
 
 
 
 
-// .nav {
-//     padding-right: $layout-margin;
-//     flex: 2 1 auto;
-//     text-align: right;
-//     &__link {
-//         display: inline;
-//         font-size: 3rem;
-//         padding-left: 1.5rem;
-//         & a{
-//         text-decoration: none;
-//         color: $colour-accent;
-//         }
-//         &--active {
-//             color: $colour-secondary;
-//             &:hover{
-//                 cursor:default;
-//                 color: $colour-secondary;
-//             }
-//         }
-//         & a:hover{
-//             color: $colour-white;
-//         }
-//     }
-// }
