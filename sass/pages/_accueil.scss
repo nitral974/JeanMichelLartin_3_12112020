@@ -69,15 +69,12 @@
         height: 100%;
         object-fit: cover;
     }
-    > p {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        color: green;
-        background-color: #99E2D0;
-        padding: 0.5rem 0.8rem;
-        border-radius: 1rem;
+    .newbtn{
+        @include newbtn;
     }
+
+
+   
     & .fa-heart{
         font-size: 3rem;
        

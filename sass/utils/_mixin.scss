@@ -1,26 +1,35 @@
 @mixin display-module {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @mixin border-shadow {
-    box-shadow: 0rem 0rem 0.1rem black;
+  box-shadow: 0rem 0rem 0.1rem black;
 }
 @mixin padding-general {
-    padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
 }
-
-
 
 @mixin btn {
-    padding: 1.5rem 2rem;
-    border: none;
-    @include border-shadow;
-    border-radius: 3rem;
-    background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
+  padding: 1.5rem 2rem;
+  border: none;
+  @include border-shadow;
+  border-radius: 3rem;
+  background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
 }
+
+@mixin newbtn{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: #008766;
+        background-color: #99E2D0;
+        padding: 0.5rem 0.8rem;
+        border-radius: 1rem;
+}
+
 @mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        grid-template-columns: 1fr;
-    }
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    grid-template-columns: 1fr;
+  }
 }

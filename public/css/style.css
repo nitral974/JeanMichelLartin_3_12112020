@@ -41,7 +41,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .btn {
@@ -49,7 +49,7 @@ button {
   border: none;
   box-shadow: 0rem 0rem 0.1rem black;
   border-radius: 3rem;
-  background: linear-gradient(170deg, #FF79DA, 35%, #9356DC);
+  background: linear-gradient(170deg, #ff79da, 35%, #9356dc);
 }
 
 .restaurant {
@@ -86,14 +86,14 @@ button {
   border-radius: 1.5rem;
   position: relative;
 }
-.nav__link a {
+.nav__link--transparent {
+  background-color: #deccf4;
+}
+.nav__info {
   display: flex;
   align-items: center;
   text-decoration: none;
   column-gap: 2rem;
-}
-.nav__link--transparent {
-  background-color: #deccf4;
 }
 .nav__circle {
   width: 3rem;
@@ -102,7 +102,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9356DC;
+  background-color: #9356dc;
   position: absolute;
   left: -1.5rem;
   color: white;
@@ -213,11 +213,11 @@ button {
   height: 100%;
   object-fit: cover;
 }
-.restaurant-prev > p {
+.restaurant-prev .newbtn {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  color: green;
+  color: #008766;
   background-color: #99E2D0;
   padding: 0.5rem 0.8rem;
   border-radius: 1rem;
