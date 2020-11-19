@@ -52,6 +52,18 @@ button {
   background: linear-gradient(170deg, #ff79da, 35%, #9356dc);
 }
 
+.container_grid_entree-info {
+  width: 100%;
+  height: 7rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0.3rem 1rem 1.4rem -1rem #b0b0b0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
 .restaurant {
   padding: 2rem;
   background-color: #f6f6f6;
@@ -117,6 +129,60 @@ button {
   position: absolute;
   left: -1.5rem;
   color: white;
+}
+
+.background-menu {
+  width: 100%;
+  height: 32.5rem;
+  background-size: cover;
+}
+
+.container_grid_entree {
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem 3.5rem 1rem;
+  background-color: #f6f6f6;
+}
+.container_grid_entree p {
+  font-weight: 300;
+}
+
+.container_grid_title {
+  font-family: "Shrikhand", cursive;
+  background-color: #f6f6f6;
+  border-radius: 3.5rem 3.5rem 0 0;
+  width: 100%;
+  height: 10.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10px;
+  position: relative;
+  top: 22rem;
+  padding: 0 4rem 0 1rem;
+}
+
+.commander {
+  width: 100%;
+  height: 13.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.buttonmenu {
+  width: 100%;
+  height: 7rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0.3rem 1rem 1.4rem -1rem #b0b0b0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 .footer {
@@ -252,6 +318,10 @@ button {
 }
 .restaurant-prev p {
   font-weight: 300;
+}
+
+.background-menu {
+  background-image: url("/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

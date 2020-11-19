@@ -1,0 +1,42 @@
+.background-menu{
+    width: 100%;
+    height: 32.5rem;
+    background-size: cover;
+    
+}
+.container_grid_entree{
+    @include flex-menu;
+    & p {
+        font-weight: 300;
+        }
+}
+
+
+.container_grid_title{
+    font-family: $font-title, cursive;
+    background-color: $color-firstbackground;
+    border-radius: 3.5rem 3.5rem 0 0;
+    width: $full-width;
+    height: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 10px;
+    position: relative;
+    top: 22rem;
+    padding: 0 4rem 0 1rem;
+    
+}
+
+.commander{
+    width: 100%;
+    height: 13.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-firstbackground;
+}
+
+.buttonmenu{
+@include buttonmenu
+}

@@ -1,26 +1,25 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size:$font-size;
-    font-weight: 500;
-    line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+  font-size: $font-size;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 h1 {
-    font-family: 'Shrikhand', cursive;
+  font-family: $font-title, cursive;
 }
-h2{
-    font-size: 2.5rem;
-    line-height: 2.8rem;
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
 }
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
-
 button {
-     font-family: 'Roboto', sans-serif;
-     font-size: $font-size;
-     color: white;
-     background-color: $color-primary;
+  font-family: "Roboto", sans-serif;
+  font-size: $font-size;
+  color: white;
+  background-color: $color-primary;
 }
