@@ -135,6 +135,7 @@ button {
   width: 100%;
   height: 32.5rem;
   background-size: cover;
+  background-position: 80%;
 }
 
 .container_grid_entree {
