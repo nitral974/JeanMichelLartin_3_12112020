@@ -2,4 +2,9 @@
     width: $full-width;
     height: 6.4rem;
     @include display-module;
+    &-navlink{
+        font-size: 2rem;
+        position: absolute;
+        left: 2rem;
+    }
 }

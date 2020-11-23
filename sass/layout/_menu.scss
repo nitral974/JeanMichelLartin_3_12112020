@@ -1,0 +1,134 @@
+.background-menu {
+  width: 100%;
+  height: 32.5rem;
+  background-size: cover;
+  background-position: 80%;
+}
+.container_grid_title {
+  font-family: $font-title, cursive;
+  background-color: $color-firstbackground;
+  border-radius: 3.5rem 3.5rem 0 0;
+  width: $full-width;
+  height: 10.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10px;
+  position: relative;
+  top: 22rem;
+  padding: 0 4rem 0 1rem;
+}
+.container_grid_entree {
+  @include flex-menu;
+
+  & h3 {
+    font-weight: 300;
+  }
+
+  //Animation Menu
+
+  &-info {
+    opacity: 0;
+    animation: progress-menu 500ms;
+    overflow: hidden;
+    
+
+    &::after {
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      @include display-module;
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      width: 6rem;
+      height: 100%;
+      background-color: $color-tertiary;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: translateX(6rem);
+      transform-origin: right;
+      transition: transform 500ms ease-in-out;
+    }
+
+    &:hover {
+        
+
+
+        &::after {
+        transform: translateX(0);
+        transform-origin: right;
+      }
+      .container_grid_entree-txt p{
+       
+        padding-right: 7.1rem;
+         
+        
+      }
+
+    
+      .container_grid_entree-tarif {
+        transform: translateX(-6rem);
+        transform-origin: right;
+
+        
+      }
+    }
+  }
+
+  &-info:nth-child(2) {
+    animation: progress-menu 500ms;
+    animation-fill-mode: forwards;
+  }
+  &-info:nth-child(3) {
+    animation: progress-menu 500ms;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+  }
+  &-info:nth-child(4) {
+    animation: progress-menu 500ms;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progress-menu {
+    0% {
+      transform: translateY(2rem);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  &-txt p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;;
+    font-weight: 300;
+    width: 28.5rem;
+    transition: padding-right 500ms ease-in-out;
+    
+    
+  }
+  &-tarif {
+    font-weight: bold;
+    transition: transform 500ms ease-in-out;
+    margin-left: 2rem;
+    
+    
+    
+  }
+}
+
+.commander {
+  width: 100%;
+  height: 13.5rem;
+  @include display-module;
+  background-color: $color-firstbackground;
+}
+.buttonmenu {
+  @include buttonmenu;
+}
