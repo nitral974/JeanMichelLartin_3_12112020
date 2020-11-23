@@ -1,42 +1,81 @@
-.background-menu{
-    width: 100%;
-    height: 32.5rem;
-    background-size: cover;
-    background-position: 80%; 
+.background-menu {
+  width: 100%;
+  height: 32.5rem;
+  background-size: cover;
+  background-position: 80%;
 }
-.container_grid_entree{
-    @include flex-menu;
-    & p {
-        font-weight: 300;
-        }
+.container_grid_title {
+  font-family: $font-title, cursive;
+  background-color: $color-firstbackground;
+  border-radius: 3.5rem 3.5rem 0 0;
+  width: $full-width;
+  height: 10.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10px;
+  position: relative;
+  top: 22rem;
+  padding: 0 4rem 0 1rem;
 }
+.container_grid_entree {
+  @include flex-menu;
+  & h3 {
+    font-weight: 300;
+  }
+
+  //Animation Menu
+
+  &-info{
+    opacity: 0;
+    animation: progress-menu 500ms;
+  }
+
+  &-info:nth-child(2) {
+    animation: progress-menu 500ms;
+    animation-fill-mode: forwards;
+  }
+  &-info:nth-child(3) {
+    animation: progress-menu 500ms;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+  }
+  &-info:nth-child(4) {
+    animation: progress-menu 500ms;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes progress-menu {
+    0% {
+      transform: translateY(2rem);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  //Fin de l'animation
 
 
-.container_grid_title{
-    font-family: $font-title, cursive;
-    background-color: $color-firstbackground;
-    border-radius: 3.5rem 3.5rem 0 0;
-    width: $full-width;
-    height: 10.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 10px;
-    position: relative;
-    top: 22rem;
-    padding: 0 4rem 0 1rem;
-    
+  &-txt {
+    font-weight: 300;
+  }
+  &-tarif {
+    p {
+      font-weight: bold;
+    }
+  }
 }
 
-.commander{
-    width: 100%;
-    height: 13.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-firstbackground;
+.commander {
+  width: 100%;
+  height: 13.5rem;
+  @include display-module;
+  background-color: $color-firstbackground;
 }
-
-.buttonmenu{
-@include buttonmenu
+.buttonmenu {
+  @include buttonmenu;
 }
