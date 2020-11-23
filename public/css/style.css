@@ -225,9 +225,6 @@ button {
   transform-origin: right;
   transition: transform 500ms ease-in-out;
 }
-.container_grid_entree-info:hover {
-  /* Permet de modifier la place du tarif*/
-}
 .container_grid_entree-info:hover::after {
   transform: translateX(0);
   transform-origin: right;
