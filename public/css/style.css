@@ -204,6 +204,40 @@ button {
 .container_grid_entree-info {
   opacity: 0;
   animation: progress-menu 500ms;
+  overflow: hidden;
+}
+.container_grid_entree-info::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  width: 6rem;
+  height: 100%;
+  background-color: #99e2d0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(6rem);
+  transform-origin: right;
+  transition: transform 500ms ease-in-out;
+}
+.container_grid_entree-info:hover {
+  /* Permet de modifier la place du tarif*/
+}
+.container_grid_entree-info:hover::after {
+  transform: translateX(0);
+  transform-origin: right;
+}
+.container_grid_entree-info:hover .container_grid_entree-txt p {
+  padding-right: 7.1rem;
+}
+.container_grid_entree-info:hover .container_grid_entree-tarif {
+  transform: translateX(-6rem);
+  transform-origin: right;
 }
 .container_grid_entree-info:nth-child(2) {
   animation: progress-menu 500ms;
@@ -229,11 +263,18 @@ button {
     transform: translateY(0);
   }
 }
-.container_grid_entree-txt {
+.container_grid_entree-txt p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 300;
+  width: 28.5rem;
+  transition: padding-right 500ms ease-in-out;
 }
-.container_grid_entree-tarif p {
+.container_grid_entree-tarif {
   font-weight: bold;
+  transition: transform 500ms ease-in-out;
+  margin-left: 2rem;
 }
 
 .commander {

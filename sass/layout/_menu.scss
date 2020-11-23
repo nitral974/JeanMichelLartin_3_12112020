@@ -20,15 +20,60 @@
 }
 .container_grid_entree {
   @include flex-menu;
+
   & h3 {
     font-weight: 300;
   }
 
   //Animation Menu
 
-  &-info{
+  &-info {
     opacity: 0;
     animation: progress-menu 500ms;
+    overflow: hidden;
+    
+
+    &::after {
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      @include display-module;
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      width: 6rem;
+      height: 100%;
+      background-color: $color-tertiary;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: translateX(6rem);
+      transform-origin: right;
+      transition: transform 500ms ease-in-out;
+    }
+
+    &:hover {
+        
+
+
+        &::after {
+        transform: translateX(0);
+        transform-origin: right;
+      }
+      .container_grid_entree-txt p{
+       
+        padding-right: 7.1rem;
+         
+        
+      }
+
+      /* Permet de modifier la place du tarif*/
+      .container_grid_entree-tarif {
+        transform: translateX(-6rem);
+        transform-origin: right;
+
+        
+      }
+    }
   }
 
   &-info:nth-child(2) {
@@ -57,16 +102,24 @@
     }
   }
 
-  //Fin de l'animation
 
-
-  &-txt {
+  &-txt p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;;
     font-weight: 300;
+    width: 28.5rem;
+    transition: padding-right 500ms ease-in-out;
+    
+    
   }
   &-tarif {
-    p {
-      font-weight: bold;
-    }
+    font-weight: bold;
+    transition: transform 500ms ease-in-out;
+    margin-left: 2rem;
+    
+    
+    
   }
 }
 
