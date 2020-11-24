@@ -54,6 +54,7 @@
   
   z-index: 1;
   transition: color 900ms ease-in-out;
+  position: relative;
   &:hover {
     color: transparent;
     &::after {
