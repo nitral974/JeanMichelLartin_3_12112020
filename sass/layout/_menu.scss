@@ -31,7 +31,6 @@
     opacity: 0;
     animation: progress-menu 500ms;
     overflow: hidden;
-    
 
     &::after {
       content: "\f058";
@@ -52,26 +51,17 @@
     }
 
     &:hover {
-        
-
-
-        &::after {
+      &::after {
         transform: translateX(0);
         transform-origin: right;
       }
-      .menubloc__txt p{
-       
+      .menubloc__txt p {
         padding-right: 7.1rem;
-         
-        
       }
 
-    
       .menubloc__tarif {
         transform: translateX(-6rem);
         transform-origin: right;
-
-        
       }
     }
   }
@@ -102,24 +92,18 @@
     }
   }
 
-
   &__txt p {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;;
+    text-overflow: ellipsis;
     font-weight: 300;
     width: 28.5rem;
     transition: padding-right 500ms ease-in-out;
-    
-    
   }
   &__tarif {
     font-weight: bold;
     transition: transform 500ms ease-in-out;
     margin-left: 2rem;
-    
-    
-    
   }
 }
 

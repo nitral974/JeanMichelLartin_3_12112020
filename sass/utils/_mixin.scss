@@ -51,7 +51,7 @@
 
 @mixin lovebtn {
   font-size: 3rem;
-  position: relative;
+  
   z-index: 1;
   transition: color 900ms ease-in-out;
   &:hover {
