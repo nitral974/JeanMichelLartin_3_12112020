@@ -11,7 +11,7 @@
   width: $full-width;
   height: 100%;
 }
-.booking {
+.description {
   background-color: $color-firstbackground;
   width: $full-width;
   height: 28.8rem;
@@ -21,7 +21,7 @@
   align-items: center;
   text-align: center;
   padding: 4rem 4rem 5.5rem 4rem;
-  &_info {
+  &__info {
     font-size: 1.7rem;
     font-weight: 200;
   }
@@ -73,12 +73,13 @@
   background: linear-gradient($color-primary, $color-secondary);
   position: absolute;
   top: 0;
-  animation: spinoff 20s cubic-bezier(1, 0.09, 0.98, 0.34); //name duration timing-function delay iteration-count direction fill-mode;
+  animation: spinoff 3s cubic-bezier(1, 0.09, 0.98, 0.34); //name duration timing-function delay iteration-count direction fill-mode;
   transform: translateY(-100rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  
+  
   &_items {
     width: 15rem;
     height: 15rem;

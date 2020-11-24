@@ -52,7 +52,7 @@ button {
   background: linear-gradient(170deg, #ff79da, 35%, #9356dc);
 }
 
-.container_grid_entree-info {
+.menubloc__info {
   width: 100%;
   height: 7rem;
   background-color: white;
@@ -108,7 +108,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-.header-navlink {
+.header__navlink {
   font-size: 2rem;
   position: absolute;
   left: 2rem;
@@ -190,7 +190,7 @@ button {
   padding: 0 4rem 0 1rem;
 }
 
-.container_grid_entree {
+.menubloc {
   height: 31rem;
   display: flex;
   flex-direction: column;
@@ -198,15 +198,15 @@ button {
   padding: 0 1rem 3.5rem 1rem;
   background-color: #f6f6f6;
 }
-.container_grid_entree h3 {
+.menubloc h3 {
   font-weight: 300;
 }
-.container_grid_entree-info {
+.menubloc__info {
   opacity: 0;
   animation: progress-menu 500ms;
   overflow: hidden;
 }
-.container_grid_entree-info::after {
+.menubloc__info::after {
   content: "";
   font-family: "Font Awesome 5 Free";
   display: flex;
@@ -225,27 +225,27 @@ button {
   transform-origin: right;
   transition: transform 500ms ease-in-out;
 }
-.container_grid_entree-info:hover::after {
+.menubloc__info:hover::after {
   transform: translateX(0);
   transform-origin: right;
 }
-.container_grid_entree-info:hover .container_grid_entree-txt p {
+.menubloc__info:hover .menubloc__txt p {
   padding-right: 7.1rem;
 }
-.container_grid_entree-info:hover .container_grid_entree-tarif {
+.menubloc__info:hover .menubloc__tarif {
   transform: translateX(-6rem);
   transform-origin: right;
 }
-.container_grid_entree-info:nth-child(2) {
+.menubloc__info:nth-child(2) {
   animation: progress-menu 500ms;
   animation-fill-mode: forwards;
 }
-.container_grid_entree-info:nth-child(3) {
+.menubloc__info:nth-child(3) {
   animation: progress-menu 500ms;
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
 }
-.container_grid_entree-info:nth-child(4) {
+.menubloc__info:nth-child(4) {
   animation: progress-menu 500ms;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
@@ -260,7 +260,7 @@ button {
     transform: translateY(0);
   }
 }
-.container_grid_entree-txt p {
+.menubloc__txt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -268,7 +268,7 @@ button {
   width: 28.5rem;
   transition: padding-right 500ms ease-in-out;
 }
-.container_grid_entree-tarif {
+.menubloc__tarif {
   font-weight: bold;
   transition: transform 500ms ease-in-out;
   margin-left: 2rem;
@@ -336,7 +336,7 @@ button {
   height: 100%;
 }
 
-.booking {
+.description {
   background-color: #f6f6f6;
   width: 100%;
   height: 28.8rem;
@@ -347,7 +347,7 @@ button {
   text-align: center;
   padding: 4rem 4rem 5.5rem 4rem;
 }
-.booking_info {
+.description__info {
   font-size: 1.7rem;
   font-weight: 200;
 }
@@ -405,12 +405,11 @@ button {
   background: linear-gradient(#9356dc, #ff79da);
   position: absolute;
   top: 0;
-  animation: spinoff 20s cubic-bezier(1, 0.09, 0.98, 0.34);
+  animation: spinoff 3s cubic-bezier(1, 0.09, 0.98, 0.34);
   transform: translateY(-100rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 .loadspinner_items {
   width: 15rem;
