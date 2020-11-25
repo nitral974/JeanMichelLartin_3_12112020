@@ -50,6 +50,29 @@ button {
   box-shadow: 0.3rem 1rem 1.4rem -1rem #b0b0b0;
   border-radius: 3rem;
   background: linear-gradient(170deg, #ff79da, 35%, #9356dc);
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn:hover::after {
+  opacity: 1;
+  color: red;
+}
+.btn:focus {
+  outline: none;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 3rem;
+  background: linear-gradient(#ff46cc, #782cd3);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .menubloc__info {
@@ -443,6 +466,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .loadspinner_items {
   width: 15rem;

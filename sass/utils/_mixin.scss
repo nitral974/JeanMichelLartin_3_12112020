@@ -9,13 +9,43 @@
 @mixin padding-general {
   padding: 0rem 2rem 0rem 2rem;
 }
+@mixin color-btn {
+background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
+}
+
 
 @mixin btn {
   padding: 1.5rem 2rem;
   border: none;
   @include border-shadow;
   border-radius: 3rem;
-  background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
+  @include color-btn;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  
+  &:hover{
+    &::after{
+      opacity: 1;
+      color: red;
+    }
+  }
+  &:focus{
+     outline:none;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    background: linear-gradient(darken($color-secondary, 10), darken($color-primary, 10));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
 }
 
 @mixin newbtn {
