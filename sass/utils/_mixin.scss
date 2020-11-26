@@ -59,10 +59,11 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
 }
 
 @mixin flex-menu {
-  height: 31rem;
+  height:auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: 1.5rem;
   padding: 0 1rem 3.5rem 1rem;
   background-color: $color-firstbackground;
 }
