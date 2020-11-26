@@ -1,8 +1,15 @@
 .background-menu {
   width: 100%;
   height: 32.5rem;
-  background-size: cover;
-  background-position: 80%;
+  &__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+    position: relative;
+
+  }
+  
 }
 .container_grid_title {
   font-family: $font-title, cursive;
@@ -13,9 +20,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 10px;
-  position: relative;
-  top: 22rem;
+  bottom: 0;
+  position: absolute;
+  top: 30rem;
   padding: 0 4rem 0 2rem;
 }
 .menubloc {
