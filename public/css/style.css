@@ -194,8 +194,13 @@ button {
 .background-menu {
   width: 100%;
   height: 32.5rem;
-  background-size: cover;
-  background-position: 80%;
+}
+.background-menu__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+  position: relative;
 }
 
 .container_grid_title {
@@ -207,9 +212,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 10px;
-  position: relative;
-  top: 22rem;
+  bottom: 0;
+  position: absolute;
+  top: 30rem;
   padding: 0 4rem 0 2rem;
 }
 
@@ -562,9 +567,6 @@ button {
     color: #ff79da;
     text-shadow: 0 0 0.2rem #ff79da;
   }
-}
-.background-menu {
-  background-image: url("public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
