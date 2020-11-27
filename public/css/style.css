@@ -212,9 +212,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 0;
-  position: absolute;
-  top: 30rem;
+  position: relative;
+  top: -11rem;
   padding: 0 4rem 0 2rem;
 }
 
@@ -468,9 +467,9 @@ button {
 
 .loadspinner {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(#9356dc, #ff79da);
-  position: absolute;
+  position: fixed;
   top: 0;
   animation: spinoff 3s cubic-bezier(1, 0.09, 0.98, 0.34);
   transform: translateY(-100rem);
