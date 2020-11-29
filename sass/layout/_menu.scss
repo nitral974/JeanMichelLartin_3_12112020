@@ -28,9 +28,11 @@
 .menubloc {
   @include flex-menu;
   
+  
   & h3 {
     font-weight: 300;
     position: relative;
+    
   }
 
   &__title::before{
@@ -76,7 +78,10 @@
       .fa-check-circle{
         animation: anime-circle 500ms linear forwards;
       }
-      
+      .menubloc__txt h4 {
+        padding-right: 9rem;
+        
+      }
       .menubloc__txt p {
         padding-right: 7.1rem;
       }
@@ -128,7 +133,14 @@
     }
   }
   
-
+  &__txt h4 {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 28.5rem;
+    transition: padding-right 500ms ease-in-out;
+  }
 
 
 
