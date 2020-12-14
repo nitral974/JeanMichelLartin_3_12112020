@@ -1,5 +1,5 @@
 .footer {
-  background-color: black;
+  background-color: #353535;
   color: white;
   width: $full-width;
   height: 19.7rem;
@@ -19,5 +19,11 @@
     & p {
       margin-left: 1rem;
     }
+  }
+  @include mobile-only{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
   }
 }

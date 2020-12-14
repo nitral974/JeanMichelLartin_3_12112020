@@ -59,7 +59,7 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
 }
 
 @mixin flex-menu {
-  height:auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +72,6 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
   width: 100%;
   min-height: 7rem;
   height: auto;
-  
   background-color: white;
   border-radius: 1.5rem;
   @include border-shadow;
@@ -80,6 +79,7 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
   justify-content: space-between;
   align-items: flex-end;
   padding: 1rem 2rem 1rem 1rem;
+  
 }
 
 @mixin lovebtn {
@@ -115,17 +115,8 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
   }
 }
 
-
-
-
-
-
-
-
-
-
 @mixin mobile-only {
-  @media screen and (max-width: map-get($breakpoints, mobile)) {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: map-get($breakpoints, mobile)) {
+    @content;
   }
 }

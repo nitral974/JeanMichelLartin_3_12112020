@@ -36,6 +36,11 @@ h4 {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
+@media screen and (min-width: 599px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
 
 a {
   text-decoration: none;
@@ -183,6 +188,9 @@ button {
   align-items: center;
   text-decoration: none;
   column-gap: 2rem;
+}
+.operation-list__info-color {
+  color: #9356dc;
 }
 .operation-list__circle {
   width: 3rem;
@@ -369,7 +377,7 @@ button {
 }
 
 .footer {
-  background-color: black;
+  background-color: #353535;
   color: white;
   width: 100%;
   height: 19.7rem;
@@ -389,6 +397,14 @@ button {
 }
 .footer__link p {
   margin-left: 1rem;
+}
+@media screen and (min-width: 599px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+  }
 }
 
 .location {
@@ -431,6 +447,15 @@ button {
   grid-template-columns: 1fr;
   grid-row-gap: 2rem;
   margin-bottom: 6.5rem;
+}
+@media screen and (min-width: 599px) {
+  .restaurant-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .restaurant-grid h2 {
+    grid-column-start: span 2;
+  }
 }
 
 .restaurant-article {
@@ -555,6 +580,11 @@ button {
 }
 .loadspinner_items ul li:nth-child(8) {
   animation-delay: 0.8s;
+}
+@media screen and (min-width: 599px) {
+  .loadspinner {
+    display: none;
+  }
 }
 
 @keyframes spinoff {

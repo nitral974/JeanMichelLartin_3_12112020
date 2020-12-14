@@ -41,6 +41,9 @@
       align-items: center;
       text-decoration: none;
       column-gap: 2rem;
+      &-color{
+        color: $color-primary;
+      }
     }
     &__circle {
       width: 3rem;
