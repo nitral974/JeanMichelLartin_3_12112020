@@ -104,7 +104,7 @@ background: linear-gradient(170deg, $color-secondary, 35%, $color-primary);
     right: 0;
     left: 0;
     background: -webkit-linear-gradient($color-secondary, $color-primary);
-    background-clip: text;
+    
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;

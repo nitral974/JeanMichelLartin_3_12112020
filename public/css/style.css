@@ -120,7 +120,6 @@ button {
   right: 0;
   left: 0;
   background: -webkit-linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
@@ -168,7 +167,6 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  grid-row-gap: 1.8rem;
 }
 .operation-list__link {
   background-color: #f6f6f6;
@@ -178,6 +176,7 @@ button {
   align-items: center;
   border-radius: 1.5rem;
   position: relative;
+  margin-bottom: 1.8rem;
   box-shadow: 0.3rem 1rem 1.4rem -1rem #b0b0b0;
 }
 .operation-list__link--transparent {
